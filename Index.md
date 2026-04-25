@@ -158,6 +158,29 @@ section {
             <li>Community supports lifelong learning</li>
         </ul>
     </div>
+
+    <!-- BOTTOM NAVIGATION (APP STYLE) -->
+<div class="bottom-nav">
+    <button onclick="showPage('home')">HOME</button>
+    <button onclick="showPage('about')"> ABOUT ME</button>
+    <button onclick="showPage('calendar')">BIRT. CALENDAR</button>
+    <button onclick="showPage('education')">SCHOOL</button>
+    <button onclick="showPage('mission')">MISSION AND VISION</button>
+</div>
+</div>
+
+<script>
+function showPage(pageId) {
+    let pages = document.querySelectorAll(".page");
+    pages.forEach(p => p.classList.remove("active"));
+
+    document.getElementById(pageId).classList.add("active");
+}
+</script>
+
+</body>
+</html>
+
 </div>
 </section>
 
